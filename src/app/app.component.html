@@ -1,0 +1,7 @@
+<h3>{{ title }}</h3>
+<input type="text" placeholder="Enter New Task" #task />
+<br />
+<br />
+<button (click)="SubmitTask(task.value)">Add Task</button>
+
+<p *ngFor="let item of localList">{{item.name}} <button (click)="removeTodo(item.id)">Remove</button></p>
