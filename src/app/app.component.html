@@ -4,4 +4,7 @@
 <br />
 <button (click)="SubmitTask(task.value)">Add Task</button>
 
-<p *ngFor="let item of localList">{{item.name}} <button (click)="removeTodo(item.id)">Remove</button></p>
+<p *ngFor="let item of todoList">
+  {{ item.name }}
+  <button (click)="removeTodo(item.id)">Remove</button>
+</p>
